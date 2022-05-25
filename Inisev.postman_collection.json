@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "b454fde6-de8f-4256-8e1a-83c728a5c426",
+		"name": "Inisev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Websites",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/subscription/public/api/websites",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"subscription",
+						"public",
+						"api",
+						"websites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Google post 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is post 1 descripton",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/subscription/public/api/post/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"subscription",
+						"public",
+						"api",
+						"post",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/subscription/public/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"subscription",
+						"public",
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscribe Website",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/subscription/public/api/website/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"subscription",
+						"public",
+						"api",
+						"website",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/subscription/public/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"subscription",
+						"public",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send NewsLetter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/subscription/public/api/newsletter/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"subscription",
+						"public",
+						"api",
+						"newsletter",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
